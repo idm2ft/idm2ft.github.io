@@ -1,0 +1,130 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/* Typography */
+body, p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 140%;
+    color: #85a7b5;
+}
+
+h1, h2 {
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 3px 6px;
+    font-size: 24;
+}
+
+h3,h4,h5,h6 { 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: large;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#sidebar {
+    position: fixed;
+    right: 50;
+    top:100;
+    bottom:100;
+    width: 25%;
+    z-index: 1;
+}
+
+#map-parent {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;	/* 100% of viewport width */
+	height: 100vh;	/* 100% of viewport height */
+}
+#map { width: 100%; height: 100%; position: absolute; }
+
+#map-sidebar {
+    position: absolute;
+    top:50;
+    left: 50;
+    height: 800;
+    padding: 15px;
+    z-index: 1;
+    font-size: 10px;
+    width: 250px;
+}
+
+/* Sidebar Content */
+#sidebar>div { padding: 20px; }
+
+.page-title {
+    font-size: 30px;
+    line-height: 125%;
+}
+
+
+#chapters {
+    height: 900px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#chapters>.chapter>h3 {
+    font-size:25px;
+    opacity:.7;
+}
+#chapters>.chapter>p {
+    opacity:.8;
+    color:black;
+    font-size:20px;
+    background:white;
+    opacity:0.7;
+}
+
+/* Map Area content */
+
+    #map-sidebar>div { margin-bottom: 30px; }
+    #map-sidebar>div:last-child { margin-bottom: 0; }
+
+
+    #layers-control {
+        text-align: center;
+        z-index: 1;
+    }
+
+    #layers-control h3 { 
+        line-height: initial;
+        font-size: 15px;
+        color:black;
+    }
+
+    #layers-control a {
+        font-size: 12px;
+        font-weight: 500;
+        color: #00394d;
+        display: block;
+        margin: 0 0 5px 0;
+        padding: 0;
+        padding: 5px;
+        text-decoration: none;
+        text-align: center;
+        background-color: #ccc;
+    }
+
+    #layers-control a.active {
+        background-color: skyblue;
+    }
+
+    #layers-control a:hover {
+        background-color: hotpink;
+    }
+    #layers-control a.active:hover {
+        background: hotpink;
+    }
+
+
+
+
